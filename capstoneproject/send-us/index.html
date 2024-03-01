@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Form starts here -->
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="container">
+    <form action="thankyou.html" method="post" enctype="multipart/form-data" class="form">
+      <!-- Form title -->
+      <h2>Fill the form and we'll take action very soon</h2>
+      <!-- Name field -->
+      <div class="form-group">
+        <label for="name"><strong>Your Name</strong></label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+      </div>
+      <!-- Contact number field -->
+      <div class="form-group">
+        <label for="contact"><strong>Contact Number</strong></label>
+        <input type="tel" id="contact" name="contact" required placeholder="Your Contact Number">
+      </div>
+      <!-- Victim name field -->
+      <div class="form-group">
+        <label for="subject"><strong>Victim Name</strong></label>
+        <input type="text" id="subject" name="subject" placeholder="Victim Name">
+      </div>
+      <!-- Address field -->
+      <div class="form-group">
+        <label for="address"><strong>Address</strong></label>
+        <textarea id="address" name="address" required placeholder="Your Address"></textarea>
+      </div>
+      <!-- State dropdown -->
+      <div class="form-group">
+        <label for="state"><strong>State</strong></label>
+        <select id="state" name="state" required>
+          <option value="" disabled selected>Select State</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <!-- Add other states here -->
+        </select>
+      </div>
+      <!-- District text input -->
+      <div class="form-group">
+        <label for="district"><strong>District</strong></label>
+        <input type="text" id="district" name="district" required placeholder="Enter District">
+      </div>
+      <!-- Block text input -->
+      <div class="form-group">
+        <label for="block"><strong>Block</strong></label>
+        <input type="text" id="block" name="block" required placeholder="Enter Block">
+      </div>
+      <!-- Button to upload location -->
+      <div class="form-group">
+        <button id="upload_location" type="button">Upload Location</button>
+      </div>
+      <!-- Upload victim photo field -->
+      <div class="form-group">
+        <label for="child_photo"><strong>Upload Victim Photo (if you can)</strong></label>
+        <input type="file" id="child_photo" name="child_photo">
+      </div>
+      <!-- Additional details field -->
+      <div class="form-group">
+        <label for="more_details"><strong>Wanna Share Some more details</strong></label>
+        <textarea id="more_details" name="more_details" placeholder="Additional Details"></textarea>
+      </div>
+      <!-- Submit button -->
+      <!-- Replaced with styled anchor tag -->
+      <a href="/capstoneproject/thankyou/index.html" class="button">Submit</a>
+    </form>
+  </div>
+  <!-- JavaScript for uploading live location -->
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>

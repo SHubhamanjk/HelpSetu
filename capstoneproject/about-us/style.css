@@ -1,0 +1,73 @@
+ /* CSS styles */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(117, 28, 28);
+    color: #0a0a0a;
+    background-image: url("/capstoneproject/Untitled\ \(4\).png");
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-us img {
+    max-width: 100%;
+    padding: 50px 0 50px 20px;
+  }
+  .about-us-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .donate-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px; /* Adjust button padding */
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  .donate-button:hover {
+    background-color: #cc0000;
+  }
+  footer {
+    background-color: #1b021a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .about-us {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .about-us img {
+      padding: 20px 0;
+    }
+    .about-us-content {
+      padding-right: 0;
+    }
+  }

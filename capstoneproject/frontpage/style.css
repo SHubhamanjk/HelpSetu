@@ -1,0 +1,383 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+    position: relative;
+    background-image: url("/capstoneproject/Untitled\ \(4\).png");
+    background-size: cover;
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    position: relative;
+   
+    
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.1vw;
+    
+    
+    
+}
+.logo i{
+    font-size: 4vw;
+    color: #fffb00;
+}
+.logo h1{
+    font-size:2.3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    
+    color: #fffb00;
+
+}
+#hh1{
+    font-size:2.3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    
+    color: #ffffff;
+}
+#i2{
+    display: none;
+
+}
+.nav-detail{
+   display: flex;
+   align-items: center;
+   gap: 2vw;
+   font-size: 1.5vw;
+   font-weight: 500;
+   justify-content: center;
+  
+   
+       
+}
+.btn{
+    color: rgb(238, 238, 238);
+    border: 2px solid transparent;
+    
+    padding: 1vh 3vh;
+    border-radius: 2vh;
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    
+    
+}
+
+
+.nav-detail a:hover{
+    border:#ffffff 2px solid;
+    color: #fffb00;
+    cursor: pointer;
+    
+    
+
+
+} 
+
+.row a{
+    background-color: rgb(123, 123, 123);
+    border-radius: 2vh;
+    
+}
+
+  /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+  /* Dropdown button */
+.dropdown{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropbtn:hover{
+    border: 2px solid white;
+    color: yellow;
+}
+  
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:rgb(61, 58, 58);
+}
+  
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    /* height: 25%; */
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2vh;
+}
+  
+  /* Mega Menu header, if needed */
+.dropdown-content .header {
+    background: rgb(123, 123, 123);
+    padding: 16px;
+    color: white;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #9a4747;
+    
+    background-size: cover;
+    height: 450px;
+    
+}
+  
+  /* Style links inside the columns */
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 1vh;
+}
+  
+  /* Add a background color on hover */
+  .column a:hover {
+    background-color: rgb(123, 123, 123);
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    
+   
+    .nav{
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .nav-detail a{
+        display: none;
+        
+    }
+    .dropbtn{
+        display: none;
+    }
+    
+    #a2{
+        display: block;
+        font-size: 5vw;
+    }
+ 
+    .logo i{
+        
+        color: #fffb00;
+        font-size: 6vh;
+        
+    }
+    #i2{
+        display: block;
+        color: beige;
+        font-size: 9vw;
+    }
+
+
+     .logo h1{
+        font-size: 3vh;
+        color: #fffb00;
+    }
+    #hh1{
+        font-size:3vh;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        
+        color: #ffffff;
+    }
+    
+   .row{
+    display: flex;
+    flex-direction:column ;
+    height: 20vh;
+    width: 135vh;
+   }
+   .column h3{
+    font-size: 3vh;
+   }
+   .header h2{
+    font-size: 4vh;
+   }
+
+   .row a{
+    background-color: rgb(123, 123, 123);
+    border-radius: 2vh;
+    width: 40vh;
+    height: 8vh;
+    font-size: 3vh;
+    
+    }
+    .column a {
+        float: none;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin-top: 1vh;
+    }
+   
+
+
+
+
+}
+
+
+/* hero section */
+.move{
+    height:7vh ;
+    width:100% ;
+    background-color: #626262; 
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-weight: 900;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    color:rgb(255, 255, 255);   
+    
+}
+
+
+
+/* .hero{
+    height:60vh ;
+    width: 100%;
+    background-image: url(Firefly\ indian\ poor\ boy\ doing\ child\ labour;\ sitting\ on\ the\ floor\,\ isolated\ 25134.jpg);
+    background-size:cover ;
+    
+} */
+
+.hero{
+    height:60vh ;
+    width: 100%;
+    background-image: url("Firefly\ indian\ poor\ boy\ doing\ child\ labour;\ sitting\ on\ the\ floor\,\ isolated\ 25134.jpg");
+    background-size:100% 100% ;
+    animation: slider 10s infinite linear;
+    
+
+    
+    
+}
+
+
+@keyframes slider {
+    0%{background-image: url("Firefly\ indian\ poor\ boy\ doing\ child\ labour;\ sitting\ on\ the\ floor\,\ isolated\ 25134.jpg");
+        background-size:100% 100% ;}
+    35%{background-image: url("school.jpg");
+        background-size: 100% 100%;}
+    75%{
+        background-image: url("woodcut.jpg");background-size: 100% 100%;
+    }
+    
+}
+
+
+
+/* aboutus */
+.foot{
+    height: 23vh;
+    width: 100%;
+    background-color: rgba(111, 27, 27, 1);
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.foot1{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(111, 27, 27, 1);
+    padding: 20px;
+    /* margin-right: 10px; */
+}
+
+.foot2{
+    width: 50%;
+    height: 100%;
+    background-color:rgba(111, 27, 27, 1);
+    padding: 20px;
+}
+.foot3{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(111, 27, 27, 1);
+    padding: 20px;
+    
+    /* padding-left: 10px; */
+    /* margin-left: 10px; */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  /* margin-left: 20px; */
+}
+
+.social-icon {
+  font-size: 24px;
+  color: rgb(255, 251, 0);
+}
+
